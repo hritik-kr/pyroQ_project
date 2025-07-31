@@ -1,15 +1,20 @@
-# PyroQ: Quantum-Enhanced Wildfire Detection
+# 🔥 PyroQ: Quantum-Enhanced Wildfire Detection
 
-![Project Logo](assets/logo.png) *(optional)*
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-green.svg)](requirements.txt)
 
-## Features
-- Quantum-classical hybrid CNN for fire detection
-- FastAPI backend with JWT authentication
-- GeoTIFF satellite image processing
-- Dockerized deployment
+**Detect wildfires using quantum-classical hybrid models on satellite imagery**
 
-## Quick Start
+![Demo](assets/pyroq_demo.gif) *(Add a short screen recording later)*
+
+## 🚀 Features
+- **Quantum CNN** for thermal anomaly detection
+- **FastAPI** backend with JWT authentication
+- **GeoTIFF processing** for satellite data
+- **Docker** deployment with GPU support
+
+## 📦 Installation
 ```bash
-git clone https://github.com/<your-username>/pyroQ_project.git
+git clone https://github.com/hritik-kr/pyroQ_project.git
 cd pyroQ_project
-docker-compose up --build
+pip install -r requirements.txt
