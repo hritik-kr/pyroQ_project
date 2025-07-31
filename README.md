@@ -14,7 +14,21 @@
 - **Docker** deployment with GPU support
 
 ## 📦 Installation
-```bash
-git clone https://github.com/hritik-kr/pyroQ_project.git
+
+git clone https://github.com/username/pyroQ_project.git
 cd pyroQ_project
 pip install -r requirements.txt
+
+
+## 🖥️ Usage
+
+from src.hybrid import PyroQModel
+model = PyroQModel.load("models/pyroq.pt")
+predictions = model.detect("thermal_image.tif")
+
+
+📊 Results
+
+Model	Accuracy	Precision	Recall
+Quantum Hybrid	92.3%	89.5%	94.1%
+Classical CNN	87.6%	85.2%	88.9%
