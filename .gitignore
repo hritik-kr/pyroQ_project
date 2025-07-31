@@ -1,0 +1,25 @@
+# Python
+*.pyc
+__pycache__/
+.venv/
+venv/
+
+# Data
+data/
+outputs/
+*.pt
+*.onnx
+
+# Environment
+.env
+.env.template
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Docker
+docker-compose.override.yml
