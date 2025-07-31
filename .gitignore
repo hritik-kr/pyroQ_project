@@ -20,6 +20,7 @@ outputs/
 
 # Jupyter
 .ipynb_checkpoints/
-
+*.csv
+*.pkl
 # Docker
 docker-compose.override.yml
