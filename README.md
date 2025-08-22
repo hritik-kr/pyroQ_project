@@ -5,7 +5,7 @@
 
 **Detect wildfires using quantum-classical hybrid models on satellite imagery**
 
-![Demo](assets/pyroq_demo.gif) *(Add a short screen recording later)*
+![Demo](assets/pyroq_demo.gif) 
 
 ## 🚀 Features
 - **Quantum CNN** for thermal anomaly detection
