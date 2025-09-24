@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Enhanced startup script for PyroQ with configuration validation and health checks.
+ startup script for PyroQ with configuration validation and health checks.
 """
 import os
 import sys
