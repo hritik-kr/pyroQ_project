@@ -140,7 +140,7 @@ class ThermalQuantumKernel:
     def _cached_circuit_execution(self, x1_hash: str, x2_hash: str, params_hash: str):
         """Cached circuit execution."""
         # This would need actual parameter reconstruction from hashes
-        # Simplified for demonstration
+        # This is Simplified for demonstration only
         pass
     
     def compute_kernel_matrix_batch(self, X: np.ndarray, Y: Optional[np.ndarray] = None, batch_size: int = 32) -> np.ndarray:
@@ -178,7 +178,7 @@ class ThermalQuantumKernel:
                         x1 = x1 / (np.linalg.norm(x1) + 1e-8)
                         x2 = x2 / (np.linalg.norm(x2) + 1e-8)
                         
-                        # Use resource manager for quantum operations
+                        # Using resource manager for quantum operations
                         with QuantumResourceManager(self.device):
                             try:
                                 probs = qnode(x1, x2, params)
@@ -299,12 +299,12 @@ class QuantumThermalDetector(nn.Module):
         """Quantum forward pass with error handling."""
         batch_size = x.size(0)
         
-        # Convert to numpy for quantum processing
+        # Converting to numpy for quantum processing
         x_np = x.detach().cpu().numpy()
         
         quantum_features = []
         for i in range(batch_size):
-            patch = x_np[i, 0]  # Single channel
+            patch = x_np[i, 0]  # Single channel here
             
             # Compute quantum kernel features
             try:
@@ -319,7 +319,7 @@ class QuantumThermalDetector(nn.Module):
     
     def _compute_thermal_similarity(self, patch: np.ndarray) -> np.ndarray:
         """Enhanced thermal similarity computation with caching."""
-        # Reference thermal patterns (learnable parameters in practice)
+        # Reference thermal patterns 
         ref_patterns = np.array([
             np.random.normal(0.7, 0.1, (self.patch_size, self.patch_size)),  # Hot spot
             np.random.normal(0.3, 0.1, (self.patch_size, self.patch_size)),  # Cool area
