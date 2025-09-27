@@ -62,7 +62,7 @@ class EnhancedThermalPreprocessor:
             
             # Quality mask (if available)
             if apply_quality_mask and data.shape[0] > 4:
-                quality_band = data[-1]  # Assume last band is quality
+                quality_band = data[-1]  # Assuming last band is quality
                 quality_mask = self._create_quality_mask(quality_band)
                 
                 # Apply quality mask to all bands
@@ -265,7 +265,7 @@ class EnhancedThermalPreprocessor:
         if use_clustering:
             combined_score = self._refine_with_clustering(thermal, combined_score)
         
-        # Final threshold
+        # Final threshold ta-da
         final_anomaly = combined_score > 0.5
         
         # Post-processing
@@ -602,7 +602,7 @@ def process_modis_directory_parallel(
     all_metadata = []
     
     with ProcessPoolExecutor(max_workers=max_workers) as executor:
-        # Submit all tasks
+        # Submit all tasks(finally)
         future_to_file = {executor.submit(process_single_file, tif_file): tif_file 
                          for tif_file in tif_files}
         
